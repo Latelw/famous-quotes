@@ -21,10 +21,17 @@ public class FamousQuotes {
        favQuotes[8] = "\"You miss 100% of the shots you font take.\"";
        favQuotes[9] = "\"No one can make you feel inferior without your consent\"";
 
-        System.out.println("Pick a quote (1-10): ");
-        System.out.println(favQuotes[user.nextInt()-1]);
+        try {
+            System.out.println("Pick a quote (1-10): ");
+            System.out.println(favQuotes[user.nextInt()-1]);
+
+       } catch (Exception e) {
+            System.out.println(("Please retry again with a selection 1-10"));
+        }
+       // System.out.println("Pick a quote (1-10): ");
+        //System.out.println(favQuotes[user.nextInt()-1]);}
 
 
+    }
 
-}
 }
